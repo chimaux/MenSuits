@@ -1,0 +1,182 @@
+@media(min-width:320px){
+    @font-face {
+        font-family: Anton;
+        src: url(./fonts/Anton-Regular.ttf);
+    }
+    body{
+        background-color:#1a1a1a;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #btn1{
+        cursor: pointer;
+        margin-bottom: 15px;
+        background-color: white;
+        width: 200px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 2px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    #btn1:hover{
+
+        background-color: rgb(227, 242, 247);
+    
+    }
+    #btn2{
+        cursor: pointer;
+        margin-bottom: 10px;
+        background-color: unset;
+        width: 200px;
+        height: 40px;
+        border: 1px solid rgb(23, 207, 235);
+        border-radius: 2px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    #btn2:hover{
+
+        background-color: rgb(227, 242, 247);
+    
+    }
+    .short_line{
+        width: 70px;
+        color: beige;
+    }
+    .line{
+        width: 170px;
+        color: beige;
+    }
+    header{
+        width: 100%;
+        background-color: antiquewhite;
+    }
+    .logo{
+        width:200px;
+        text-align: center;
+        padding: 5px 0px 5px 0px;
+        
+    }
+    #top{
+        font-family: Anton;
+        letter-spacing: 2px;
+        color: rgb(40, 39, 39);
+    }
+    #down{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:#619bd9;
+    }
+ 
+
+    #image_area img{
+      max-width: 100vw;
+      height: auto;
+    }
+    
+    
+    #image_text{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width:100vw;
+        height:auto;
+        background-color: #619bd9;
+        
+
+    }
+ 
+    #image_text div{
+        width:90vw;
+        background-color: #619bd9;
+        color: white;
+    }
+    #image_text div h1{
+        text-align: center;
+    }
+ 
+    #section2{
+        display: flex;
+        
+        text-align: center;
+        justify-content: center;
+        width: 100vw;
+        background-color: rgb(255, 255, 255);
+    }
+    #section2 div{
+        width: 90vw;
+        
+        color: rgb(62, 62, 62);
+        background-color: rgb(255, 255, 255);
+    }
+    .hold_img_div{
+        background-color: unset;
+        display: flex;
+        justify-content: center;
+    }
+    .call_to_actions .img_div img{
+        width: 70px;
+        height: auto;
+        
+        
+    }
+    .call_to_actions .img_div {
+    
+    background-color: rgb(127, 185, 255);
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    margin: 20px 0 20px 0;
+    }
+    .call_to_actions{
+        
+        background-color: unset;
+        
+    }
+    .call_to_actions .text{
+        width: 90vw;
+        text-align: center;
+        color: rgb(37, 37, 37);
+        margin-bottom: 15px;
+        
+    }
+    .cta{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(127, 185, 255);
+        
+    }
+}
+@media (min-width: 768px) {
+.main_one{
+    display: flex;
+}
+#image_area img{
+    max-width: 50vw;
+    height: auto;
+  }
+  #image_text div{
+    width:50vw;
+    background-color: #619bd9;
+    color: white;
+}
+.call_to_actions{
+    display:flex;
+}
+.call_to_actions .text{
+    width: 25vw;
+    margin: 0 5px 15px 10px;
+    text-align: center;
+    
+}
+ }
+/*@media (min-width: 768px) { }
+@media (min-width: 1024px) { }
+@media (min-width: 1280px) { }
+@media (min-width: 1536px) { }
+*/
+
