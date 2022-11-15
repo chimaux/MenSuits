@@ -79,6 +79,7 @@
     
     #image_text{
         display: flex;
+        
         justify-content: center;
         text-align: center;
         width:100vw;
@@ -159,8 +160,16 @@
     max-width: 50vw;
     height: auto;
   }
+  #image_text{
+    position: relative;
+
+}
   #image_text div{
-    width:50vw;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:40vw;
     background-color: #619bd9;
     color: white;
 }
