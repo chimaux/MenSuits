@@ -25,8 +25,10 @@
         padding: 0;
         box-sizing: border-box;
         font-family:cerebri_sans;
-        background-color: #1a1a1a;
+        overflow-x: hidden;
+        
     }
+  
     #bookApointment{
         margin: 0 auto;
        width: 200px;
@@ -34,13 +36,21 @@
         background-color: #ffffff;
         margin-bottom: 20px;
     }
+    #bookApointment a{
+        text-decoration: none;
+        color: #1676dc;
+    }
     #seeSuites{
         margin: 0 auto;
         width: 200px;
         padding: 12px 0 12px 0;
          background-color: #ffffff;
-        border: 1px solid blue;
+        border: 1px solid #1676dc;;
         margin-bottom: 20px;
+    }
+    #seeSuites a{
+   text-decoration: none;
+   color: #1676dc;
     }
     .short_line{
         width: 70px;
@@ -52,7 +62,7 @@
     }
     header{
         width: 100%;
-        background-color: antiquewhite;
+        background-color: rgb(255, 255, 255);
     }
     .logo{
         width:200px;
@@ -79,7 +89,7 @@
      
     }
     #image_area{
-        background-color: red;
+       
         width:100vw;
         
         overflow: hidden;
@@ -100,6 +110,7 @@
     }
  
     #image_text .image_text_first_child{
+        padding-top: 15px;
         width:90vw;
         background-color: #619bd9;
         color: white;
@@ -119,7 +130,7 @@
     }
     #section2 .section2_first_child{
         width: 90vw;
-        
+        padding-top: 20px;
         color: rgb(62, 62, 62);
         background-color: rgb(255, 255, 255);
     }
@@ -174,6 +185,8 @@
     }
     .locationTab .visit{
         text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
 
     .book{
@@ -182,8 +195,13 @@
            width: 300px;
            padding: 12px 0 12px 0;
             background-color: #ffffff;
-            margin-bottom: 20px;
+            /* margin-bottom: 20px; */
       
+    }
+    .book a{
+        
+        text-decoration: none;
+        color: #1676dc;
     }
     .image_gallery{
         text-align: center;
@@ -197,12 +215,13 @@
         color: rgba(148, 148, 148, 0.366);
         width: 100px;
         border: 1px solid rgba(148, 148, 148, 0.366);
-        margin-top: -30px;
+        margin-top: -20px;
     }
 
     .suits_pictures{
         display: flex;
         flex-wrap: wrap;
+       
     }
     .suits_pictures img{
         width: 300px;
@@ -220,12 +239,85 @@
        
     }
     .indochino_news{
+        margin: 0 auto;
         width: 100vw;
         height: auto;
         background: #363535;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    h1,h2,h3,h4,h5,h6{
+        margin: 0;
+    }
+    #h3_1{
+        margin-bottom: 20px;
+    }
+    #h3_2{
+        
+        font-size:small;
+        text-align: center;
+        
+    }
+    .indochino_news #true_suit{
+        text-align: center;
+        font-weight: bold;
+        width: 100vw;
+        font-size:x-large;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .indochino_news #forbes{
+        margin-top: 30px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    #bookAnAppointment2{
+        margin: 0 auto;
+text-align: center;
+background-color: white;
+width: 200px;
+padding: 10px 5px 10px 5px;
+    }
+    #bookAnAppointment2 a{
+        color: #1676dc;
+        text-decoration: none;
+            }
+    footer{
+        background-color: white;
+    }
+    .social_icons img{
+        width: 22px;
+        height: auto;
+        margin-left: 6px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        
     }
 
+    .social_icons{
+        margin: 0 auto;
+       
+        width: 100px;
+    }
+    .copyright_section{
+        text-align: center;
+        color: #7e7e7e;
+        margin-bottom: 30px;
+    }
+    .terms_and_condition{
+      
+        margin-bottom: 50px;
+text-align: center;
+    }
+    .terms_and_condition a{
+        color: #7e7e7e;
+        text-decoration: none;
+     
+    }
 }
+
+
 
 @media (min-width: 622px){
     .suits_pictures{
@@ -234,14 +326,11 @@
         margin: 0 auto;
     }
 }
-@media (min-width: 1024px) { 
-    .suits_pictures{
-        display: flex;
-        flex-wrap: wrap;
-        width: 920px;
-    }
-}
+
 @media (min-width: 768px) {
+    .indochino_news #true_suit{
+    width: 400px;
+}
 .main_one{
     display: flex;
 }
@@ -272,6 +361,14 @@
     
 }
  }
+ @media (min-width: 1024px) { 
+    .suits_pictures{
+        display: flex;
+        flex-wrap: wrap;
+        width: 920px;
+    }
+  
+}
 /*@media (min-width: 768px) { }
 @media (min-width: 1024px) { }
 @media (min-width: 1280px) { }
