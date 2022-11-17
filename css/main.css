@@ -3,44 +3,44 @@
         font-family: Anton;
         src: url(./fonts/Anton-Regular.ttf);
     }
+    @font-face {
+        font-family:cerebri_sans;
+        src: url("./fonts/CerebriSansPro-Regular.ttf");
+        
+    }
+    @font-face {
+        font-family:cerebri_sans_m;
+        
+        src: url("./fonts/CerebriSansPro-Medium.ttf");
+    }
+    @font-face {
+        font-family:cerebri_sans_eb;
+        
+        src: url("./fonts/CerebriSansPro-ExtraBold.ttf");
+    }
+
     body{
-        background-color:#1a1a1a;
+       
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family:cerebri_sans;
+        background-color: #1a1a1a;
     }
-    #btn1{
-        cursor: pointer;
-        margin-bottom: 15px;
-        background-color: white;
+    #bookApointment{
+        margin: 0 auto;
+       width: 200px;
+       padding: 12px 0 12px 0;
+        background-color: #ffffff;
+        margin-bottom: 20px;
+    }
+    #seeSuites{
+        margin: 0 auto;
         width: 200px;
-        height: 40px;
-        border: 1px solid white;
-        border-radius: 2px;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    }
-    #btn1:hover{
-
-        background-color: rgb(227, 242, 247);
-    
-    }
-    #btn2{
-        cursor: pointer;
-        margin-bottom: 10px;
-        background-color: unset;
-        width: 200px;
-        height: 40px;
-        border: 1px solid rgb(23, 207, 235);
-        border-radius: 2px;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    }
-    #btn2:hover{
-
-        background-color: rgb(227, 242, 247);
-    
+        padding: 12px 0 12px 0;
+         background-color: #ffffff;
+        border: 1px solid blue;
+        margin-bottom: 20px;
     }
     .short_line{
         width: 70px;
@@ -72,14 +72,24 @@
  
 
     #image_area img{
+        display: block;
       max-width: 100vw;
       height: auto;
+    
+     
+    }
+    #image_area{
+        background-color: red;
+        width:100vw;
+        
+        overflow: hidden;
+        
     }
     
     
     #image_text{
         display: flex;
-        
+        overflow: hidden;
         justify-content: center;
         text-align: center;
         width:100vw;
@@ -89,12 +99,13 @@
 
     }
  
-    #image_text div{
+    #image_text .image_text_first_child{
         width:90vw;
         background-color: #619bd9;
         color: white;
+        
     }
-    #image_text div h1{
+    #image_text .image_text_first_child h1{
         text-align: center;
     }
  
@@ -106,11 +117,14 @@
         width: 100vw;
         background-color: rgb(255, 255, 255);
     }
-    #section2 div{
+    #section2 .section2_first_child{
         width: 90vw;
         
         color: rgb(62, 62, 62);
         background-color: rgb(255, 255, 255);
+    }
+    #section2 .section2_first_child{
+        font-size: larger;
     }
     .hold_img_div{
         background-color: unset;
@@ -151,6 +165,81 @@
         background-color: rgb(127, 185, 255);
         
     }
+    .locationTab{
+        
+        width: 100vw;
+        height: auto;
+        background-color: #1a1a1a;
+        color: #ffffff;
+    }
+    .locationTab .visit{
+        text-align: center;
+    }
+
+    .book{
+        
+            margin: 0 auto;
+           width: 300px;
+           padding: 12px 0 12px 0;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+      
+    }
+    .image_gallery{
+        text-align: center;
+        width: 100vw;
+        height: auto;
+        background-color: white;
+        font-size: x-large;
+        padding: 20px 0px 20px 0px;
+    }
+    .image_gallery hr{
+        color: rgba(148, 148, 148, 0.366);
+        width: 100px;
+        border: 1px solid rgba(148, 148, 148, 0.366);
+        margin-top: -30px;
+    }
+
+    .suits_pictures{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .suits_pictures img{
+        width: 300px;
+        height: auto;
+        
+        
+    }
+    .suits_pictures .suit1_img{
+        width: 300px;
+        height: 200px;
+        border-radius: 3px;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 10px;
+       
+    }
+    .indochino_news{
+        width: 100vw;
+        height: auto;
+        background: #363535;
+    }
+
+}
+
+@media (min-width: 622px){
+    .suits_pictures{
+        display: flex;
+        width: 622px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1024px) { 
+    .suits_pictures{
+        display: flex;
+        flex-wrap: wrap;
+        width: 920px;
+    }
 }
 @media (min-width: 768px) {
 .main_one{
@@ -164,7 +253,7 @@
     position: relative;
 
 }
-  #image_text div{
+  #image_text .image_text_first_child{
     position: absolute;
     top: 50%;
     left:50%;
